@@ -36,11 +36,16 @@
     <div class = "item" onclick="insert('.')" >.</div>
   </div>
   <form>
-    <input id="btn" class="button" name="button" type="button" onclick="go" value="button">
+    <input id="btn" class="button" name="button" type="button" value="view image">
   </form>
   <!-- <div class="forPic"> -->
   <img src="picture.jpg" id="img">
-  <script></script>
+  <script>
+    const img = document.getElementById('img');
+    const btn = document.getElementById('btn');
+    btn.addEventListener('click', () => {
+      img.style.animationName = "slidein";
+    })</script>
   <!-- <div> -->
 </body>
 </html>
