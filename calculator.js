@@ -17,10 +17,3 @@
       document.form.textView.value = eval(exp);
     }
   }
-  function go() {
-    const img = document.getElementById('img');
-    const btn = document.getElementById('btn');
-    btn.addEventListener('click', () => {
-      img.style.animationName = "slidein";
-    })
-  }
