@@ -1,0 +1,102 @@
+body {
+  background-color: green;
+  user-select: none;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 4px;
+  padding: 4px;
+  border-radius: 5px;
+  max-width: 360px;
+  font-family: "Tahoma";
+  background-color: black;
+}
+.item {
+  background-color: blue;
+  color: black;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: bold;
+}
+form {
+  max-width: 100%;
+}
+input {
+  width: 100%;
+  height: 60px;
+  border: none;
+  font-size: 30px;
+  outline: none;
+  text-align: right;
+  padding: 0;
+}
+.input {
+  grid-column: 1/-1;
+  padding: 0;
+}
+.random {
+  grid-column: 1/3;
+  background-color: yellow;
+}
+.degree {
+  grid-column: 3/-1;
+  background-color: darkblue;
+}
+.clean {
+  grid-column: 1/3;
+  background-color: darkblue;
+}
+.back {
+  grid-column: 3/-1;
+}
+.equal {
+  grid-column: 4;
+  grid-row: 7/9;
+  background-color: yellow;
+}
+.zero {
+  grid-column: 1/3;
+}
+.button {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  max-width: 20%;
+  text-align: center;
+  background-color: red;
+  cursor: pointer;
+}
+.forPic{
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  hetght: 100%;
+}
+img {
+  width: 100%;
+  position: fixed;
+  margin-left: 0;
+  margin-top: -100%;
+  opacity: 0;
+  /* max-width: 200px; */
+  /* max-height: 200px; */
+  animation-duration: 10s;
+  /*animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
