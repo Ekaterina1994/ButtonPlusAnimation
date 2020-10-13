@@ -39,13 +39,16 @@
     <input id="btn" class="button" name="button" type="button" value="view image">
   </form>
   <!-- <div class="forPic"> -->
-  <img src="picture.jpg" id="img">
+  <img src="picture.jpg" id="img" alt="flowers"/>
   <script>
     const img = document.getElementById('img');
     const btn = document.getElementById('btn');
     btn.addEventListener('click', () => {
+	console.log(img);
+      document.body.backgroundColor = "blue";
       img.style.animationName = "slidein";
-    })</script>
+    })
+  </script>
   <!-- <div> -->
 </body>
 </html>
