@@ -2,82 +2,31 @@ body {
   user-select: none;
   background-color: green;
 }
-
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 4px;
-  padding: 4px;
-  border-radius: 5px;
-  max-width: 360px;
-  font-family: "Tahoma";
-  background-color: black;
-}
-.item {
-  background-color: blue;
-  color: black;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  font-size: 22px;
-  font-weight: bold;
-}
-form {
-  max-width: 100%;
-}
-input {
-  width: 100%;
-  height: 60px;
-  border: none;
-  font-size: 30px;
-  outline: none;
-  text-align: right;
-  padding: 0;
-}
-.input {
-  grid-column: 1/-1;
-  padding: 0;
-}
-.random {
-  grid-column: 1/3;
-  background-color: yellow;
-}
-.degree {
-  grid-column: 3/-1;
-  background-color: darkblue;
-}
-.clean {
-  grid-column: 1/3;
-  background-color: darkblue;
-}
-.back {
-  grid-column: 3/-1;
-}
-.equal {
-  grid-column: 4;
-  grid-row: 7/9;
-  background-color: yellow;
-}
-.zero {
-  grid-column: 1/3;
-}
 .button {
   display: flex;
   margin: 10px auto 0 auto;
-  max-width: 20%;
+  width: 20%;
+  height: 50px;
   justify-content: center;
   text-align: center;
   cursor: pointer;
+  border-radius: 5px;
+  border-width: 5px;
+  border-color: blue;
+  background-color: lightblue;
+  font-family: "Georgia";
+  font-size: 24px;
+
 }
 
 img {
-  width: 100%;
+  display: flex;
+  width: 60%;
+  height: auto;
+  justify-content: center;
   position: fixed;
-  margin-top: -50%;
+  margin: 0 auto;
+  margin-top: -5%;
   opacity: 0;
   animation-duration: 3s;
   animation-fill-mode: forwards;

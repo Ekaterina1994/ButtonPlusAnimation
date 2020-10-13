@@ -8,54 +8,26 @@
     </script>
 </head>
 <body>
-  <div class="container">
-    <div class = "item input" ><form name="form">
-      <input type="text" name="textView" readonly>
-    </form></div>
-    <div class = "item random" onclick="random(100)" >Random</div>
-    <div class = "item degree" onclick="insert('**')" >Degree</div>
-    <div class = "item clean" onclick="clean()" >C</div>
-    <div class = "item back" onclick="back()" >&#8629;</div>
-    <div class = "item" onclick="insert('+')" >+</div>
-    <div class = "item" onclick="insert('-')"  >-</div>
-    <div class = "item" onclick="insert('*')"  >&#215;</div>
-    <div class = "item" onclick="insert('/')"  >&#247;</div>
-    <div class = "item" onclick="insert('7')" >7</div>
-    <div class = "item" onclick="insert('8')" >8</div>
-    <div class = "item" onclick="insert('9')" >9</div>
-    <div class = "item" onclick="insert('(')" >(</div>
-    <div class = "item" onclick="insert('4')" >4</div>
-    <div class = "item" onclick="insert('5')" >5</div>
-    <div class = "item" onclick="insert('6')" >6</div>
-    <div class = "item"onclick="insert(')')" >)</div>
-    <div class = "item" onclick="insert('1')" >1</div>
-    <div class = "item" onclick="insert('2')" >2</div>
-    <div class = "item" onclick="insert('3')" >3</div>
-    <div class = "item equal" onclick="equal()" >=</div>
-    <div class = "item zero" onclick="insert('0')" >0</div>
-    <div class = "item" onclick="insert('.')" >.</div>
-  </div>
   <form>
     <input id="btn" class="button" name="button" type="button" value="view image">
-    <input id="btn2" class="button" name="button" type="button" value="hide image">
   </form>
   <!-- <div class="forPic"> -->
   <img src="picture.jpg" id="img" alt="flowers"/>
   <script>
     const img = document.getElementById('img');
     const btn = document.getElementById('btn');
-    const btn2 = document.getElementById('btn2');
+    let disp = ["block", "none"];
     btn.addEventListener('click', () => {
 	console.log(img);
-      document.body.backgroundColor = "blue";
-      img.style.display = "block";
-      img.style.animationName = "slidein";
+  if (img.style.display != disp[0]){
+        img.style.display = disp[0];
+        img.style.animationName = "slidein";
+        document.body.backgroundColor = "blue";
+    }
+    else{
+        img.style.display = disp[1];
+    }
     })
-    btn2.addEventListener('click', () => {
-      document.body.backgroundColor = "blue";
-      img.style.display = "none";
-    })
-
   </script>
   <!-- <div> -->
 </body>
